@@ -1,14 +1,14 @@
 import TextEditor from "./TextEditor";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import { v4 as uuidV4 } from "uuid";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" exact element={<RedirectToNewDocument />} />
         <Route path="/document/:id" element={<TextEditor />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
