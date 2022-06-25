@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
 const Document = require("./Document");
 const defaultValue = "";
-mongoose.connect("mongodb://localhost/google-docs-clone", (err) => {
-  if (err) throw err;
-  console.log("connected to Mongo DB");
-});
+
+const mongodbUrl =
+  "mongodb+srv://IlariaRefaat:JBunPjlx2Cg8ENqL@cluster0.0sabb.mongodb.net/google-docs-clone?retryWrites=true&w=majority&maxPoolSize=1";
+
+mongoose
+  .connect(mongodbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+  .catch((err) => console.log(err));
+
 const io = require("socket.io")(3001, {
   cors: {
     origin: "http://localhost:3000",
