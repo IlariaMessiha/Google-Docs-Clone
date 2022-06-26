@@ -14,3 +14,4 @@ To access the running application (client side) you may use one of two links:
 - [Heroku Deployed](https://text-editor-client.herokuapp.com/#/document/)
 
 In case you wanted to run the project locally you would need to have Angular framework installed and ready on your PC and change the connection link between the client and server.
+The Drive link of the code: https://drive.google.com/drive/folders/1E-UEfvx9lXDpeUdnze8vXG8d6bMHU0ni?usp=sharing
